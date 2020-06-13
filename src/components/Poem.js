@@ -39,7 +39,7 @@ export const Poem = ({accountId, text, image, postDate, likeCount}) =>  {
   
     return (
         <>
-        <Card className={classes.root}>
+      <Card className={classes.root} style={{marginTop: 10}}>
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
@@ -63,7 +63,7 @@ export const Poem = ({accountId, text, image, postDate, likeCount}) =>  {
         <IconButton aria-label="add to favorites">
           <FavoriteIcon />
         </IconButton>
-        {}
+        {likeCount}
       </CardActions>
     </Card>
         </>
