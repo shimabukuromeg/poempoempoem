@@ -2,6 +2,29 @@ import React from "react";
 import "./App.css";
 import { Header } from "./components/Header";
 import { PoemList } from "./components/PoemList";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  contaier: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+}));
+
+function App() {
+  const classes = useStyles();
+  return (
+    <div className="App">
+      <Header accountId={accountId}></Header>
+      <div className={classes.contaier}>
+        <PoemList poems={poems}></PoemList>
+      </div>
+    </div>
+  );
+}
+
+export default App;
 
 const accountId = "aaaaa";
 const poems = [
@@ -24,14 +47,3 @@ const poems = [
     likeCount: 33,
   },
 ];
-
-function App() {
-  return (
-    <div className="App">
-      <Header accountId={accountId}></Header>
-      <PoemList poems={poems}></PoemList>
-    </div>
-  );
-}
-
-export default App;

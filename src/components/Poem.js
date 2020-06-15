@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import { red } from "@material-ui/core/colors";
 import defaultIcon from "./insta-default-icon.jpg";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
-import { text } from "@storybook/addon-knobs";
 
 const useStyles = makeStyles((theme) => ({
   contaier: {
@@ -65,7 +64,9 @@ export const Poem = ({ accountId, text, image, postDate, likeCount }) => {
         <img className={classes.media} alt="" src={image}></img>
         <div className={classes.content}>
           <FavoriteBorderIcon className={classes.likeIcon}></FavoriteBorderIcon>
-          <div className={classes.poem}>{text}</div>
+          <div className={classes.poem}>
+            {accountId} {text}
+          </div>
         </div>
       </div>
     </>
