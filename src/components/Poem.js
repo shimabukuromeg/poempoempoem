@@ -62,11 +62,7 @@ export const Poem = ({ accountId, text, image, postDate, likeCount }) => {
             <div className={classes.displayName}>{accountId}</div>
           </div>
         </div>
-        <img
-          className={classes.media}
-          alt=""
-          src="https://scontent-lax3-1.cdninstagram.com/v/t51.2885-15/e35/67193701_152904202454844_6621955125528267491_n.jpg?_nc_ht=scontent-lax3-1.cdninstagram.com&_nc_cat=100&_nc_ohc=lZSeNQYXMWwAX97HBqY&oh=ff1cc49f40b3f29e5fe894b6d6d78a67&oe=5F0F51D7"
-        ></img>
+        <img className={classes.media} alt="" src={image}></img>
         <div className={classes.content}>
           <FavoriteBorderIcon className={classes.likeIcon}></FavoriteBorderIcon>
           <div className={classes.poem}>{text}</div>
