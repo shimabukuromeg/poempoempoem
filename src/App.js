@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 import { PoemList } from "./components/PoemList";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -10,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
   },
+  footer: {},
 }));
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
       <div className={classes.contaier}>
         <PoemList poems={poems}></PoemList>
       </div>
+      <Footer className={classes.footer}></Footer>
     </div>
   );
 }
