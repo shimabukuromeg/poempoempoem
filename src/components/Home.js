@@ -1,7 +1,5 @@
 import React from "react";
 // import "../App.css";
-import { Header } from "./Header";
-import { Footer } from "./Footer";
 import { PoemList } from "./PoemList";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -10,8 +8,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    marginTop: 44,
     marginBottom: 56,
+    marginTop: 44,
   },
 }));
 
@@ -19,16 +17,13 @@ export const Home = () => {
   const classes = useStyles();
   return (
     <>
-      <Header className={classes.header} accountId={accountId}></Header>
       <div className={classes.contaier}>
         <PoemList poems={poems}></PoemList>
       </div>
-      <Footer className={classes.footer}></Footer>
     </>
   );
 };
 
-const accountId = "aaaaa";
 const poems = [
   {
     id: 1,

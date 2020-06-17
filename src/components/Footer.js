@@ -5,6 +5,7 @@ import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import HomeIcon from "@material-ui/icons/Home";
 import AddBoxIcon from "@material-ui/icons/AddBox";
+import { Link, withRouter } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -34,9 +35,13 @@ export const Footer = ({ accountId }) => {
           showLabels
           className={classes.content}
         >
-          <BottomNavigationAction icon={<HomeIcon />} />
+          <BottomNavigationAction to="/" icon={<HomeIcon />} component={Link} />
           <BottomNavigationAction icon={<AddBoxIcon />} />
-          <BottomNavigationAction icon={<ProfileIcon />} />
+          <BottomNavigationAction
+            to="/profile"
+            icon={<ProfileIcon />}
+            component={Link}
+          />
         </BottomNavigation>
       </div>
     </>
