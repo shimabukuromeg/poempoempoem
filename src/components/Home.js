@@ -11,15 +11,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     marginTop: 44,
-  },
-  header: {
-    position: "fixed",
-    top: 0,
-    width: "100%",
-  },
-  footer: {
-    position: "fixed",
-    bottom: 0,
+    marginBottom: 56,
   },
 }));
 
