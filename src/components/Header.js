@@ -8,6 +8,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     height: "44px",
     borderBottom: "solid 1px #d3d3d3",
+    position: "fixed",
+    top: 0,
+    width: "100%",
+    backgroundColor: "white",
   },
   content: {
     padding: "0px, 16px",

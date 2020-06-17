@@ -10,6 +10,9 @@ const useStyles = makeStyles((theme) => ({
   container: {
     height: "44px",
     borderTop: "solid 1px #d3d3d3",
+    position: "fixed",
+    bottom: 0,
+    width: "100%",
   },
   content: {
     display: "flex",
