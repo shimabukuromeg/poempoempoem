@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
   },
-  contaier: {
+  container: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -49,7 +49,7 @@ export const Profile = () => {
   const height = 77;
   return (
     <div className={classes.root}>
-      <div className={classes.contaier}>
+      <div className={classes.container}>
         <div className={classes.header}>
           <div className={classes.content}>
             <div className={classes.iconImg}>

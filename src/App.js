@@ -12,7 +12,7 @@ function App() {
       <Header></Header>
 
       <Switch>
-        <Route path="/profile" component={Profile} />
+        <Route path="/:accountId" component={Profile} />
         <Route path="/" component={Home} />
         <Redirect to="/" />;
       </Switch>
